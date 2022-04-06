@@ -1,11 +1,13 @@
 import React from 'react';
+import LandingPage from './pages/LandingPage';
+import "./styles/GlobalStyles.css"
 
 
 function App() {
   return (
-    <div className="App">
-      app
-    </div>
+    <>
+      <LandingPage />
+    </>
   );
 }
 
