@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
+import themeContext from '../../context/themeContext';
 import HeaderStyles from './HeaderStyles';
 import logo from '../../assets/images/logo.svg';
 
 class Header extends Component {
   render() {
     return (
-      <HeaderStyles>
+      <HeaderStyles mode={this.context.theme}>
         <div className="container">
           <div className="navigation">
             <div className="logo">
@@ -32,6 +33,6 @@ class Header extends Component {
   }
 }
 
-
+Header.contextType = themeContext;
 
 export default Header

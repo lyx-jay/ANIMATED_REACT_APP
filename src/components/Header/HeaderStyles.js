@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import themeList from '../../data/themeList';
+
 
 const HeaderStyles = styled.header`
 border-bottom: 1px solid var(--mediumSlateBlue);
@@ -20,6 +22,9 @@ border-bottom: 1px solid var(--mediumSlateBlue);
   font-weight: 500;
   font-size: 1.8rem;
   padding: 0.5rem 1rem;
+  color: ${(props) => 
+    props.mode === themeList.light ? 'var(--black)' : 'var(--white)'
+  }
 }
 `
 

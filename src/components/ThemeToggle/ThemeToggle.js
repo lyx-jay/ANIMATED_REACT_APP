@@ -4,15 +4,13 @@ import themeContext from "../../context/themeContext";
 
 class ThemeToggle extends React.Component {
 
-  toggleTheme() {
-
-  }
   render() {
+
     return (
       <ThemeToggleStyles className="item">
          <input type="checkbox"
                 id="toggle"
-                onChange={e => this.toggleTheme()} />
+                onChange={this.context.toggleTheme} />
         <label htmlFor="toggle">
           <div className="iconfont icon-sun"></div>
           <div className="iconfont icon-moon-1"></div>

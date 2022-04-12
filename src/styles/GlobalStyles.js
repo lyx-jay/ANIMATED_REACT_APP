@@ -1,10 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
 import "@fontsource/poppins";
+import themeContext from '../context/themeContext';
+import themeList from '../data/themeList';
+
 
 const GlobalStyles = createGlobalStyle`
 :root {
   --darkBlue_1: #3b447a;
   --darkBlue_2: #222b5f;
+  --darkBlue_3: #0A0F19;
   --mediumSlateBlue: #6c62e2;
   --lightBlue_1: #f3f1fe;
   --lightBlue_2: #adbde3;
@@ -19,7 +23,9 @@ html {
 }
 
 body {
-  background-color: var(--lightBlue_1);
+  background-color: ${(props) => 
+    props.mode === themeList.light ? 'var(--lightBlue_1)' : 'var(--darkBlue_3)'
+  }
 }
 
 * {
@@ -44,5 +50,7 @@ a {
   margin: 0 auto;
 }
 `
+
+GlobalStyles.contextType = themeContext;
 
 export default GlobalStyles;
