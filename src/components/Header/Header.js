@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import './Header.css';
-import logo from '../../assets/images/logo.svg'
 
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
+import HeaderStyles from './HeaderStyles';
+import logo from '../../assets/images/logo.svg';
 
 class Header extends Component {
-
   render() {
     return (
-      <header>
+      <HeaderStyles>
         <div className="container">
           <div className="navigation">
             <div className="logo">
@@ -16,19 +16,22 @@ class Header extends Component {
             <div className="navMenu">
               <nav>
                 <ul>
-                  <li>home</li>
-                  <li>servies</li>
-                  <li>about</li>
-                  <li>contact</li>
+                  <li className='item'>Servies</li>
+                  <li className='item'>Home</li>
+                  <li className='item'>About</li>
+                  <li className='item'>Contact</li>
+                  <ThemeToggle />
                 </ul>
               </nav>
             </div>
           </div>
         </div>
-      </header>
+      </HeaderStyles>
 
     )
   }
 }
+
+
 
 export default Header

@@ -1,19 +1,20 @@
 import React from 'react';
 import LandingPage from './pages/LandingPage';
-import "./styles/GlobalStyles.css";
-import "@fontsource/poppins";
-// import "@fontsource/poppins/500.css";
-// import "@fontsource/poppins/600.css";
-// import "@fontsource/poppins/700.css";
-// import "@fontsource/poppins/800.css";
+import GlobalStyles from './styles/GlobalStyles';
+import themeContext from './context/themeContext';
 
-
-function App() {
-  return (
-    <>
-      <LandingPage />
-    </>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <>
+        <themeContext.Provider value='light'>
+          <GlobalStyles />
+          <LandingPage />
+        </themeContext.Provider>
+      </>
+    )
+  }
 }
+
 
 export default App;

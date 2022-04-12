@@ -1,14 +1,16 @@
+import { createGlobalStyle } from 'styled-components';
+import "@fontsource/poppins";
+
+const GlobalStyles = createGlobalStyle`
 :root {
   --darkBlue_1: #3b447a;
   --darkBlue_2: #222b5f;
-  --darkBlue_1: #0a0f19;
-  --darkBlue_1: #101826;
   --mediumSlateBlue: #6c62e2;
   --lightBlue_1: #f3f1fe;
   --lightBlue_2: #adbde3;
   --white: #ffffff;
   --black: #000000;
-
+  --toggleButtonCOlor: #cfc8f4;
   --header-height: 50px;
 }
 
@@ -41,3 +43,6 @@ a {
   width: 90%;
   margin: 0 auto;
 }
+`
+
+export default GlobalStyles;
