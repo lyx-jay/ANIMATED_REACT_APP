@@ -3,13 +3,17 @@ import themeList from '../../data/themeList';
 
 
 const HeaderStyles = styled.header`
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: var(--header-height);
 border-bottom: 1px solid var(--mediumSlateBlue);
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: var(--header-height);
-
+  padding: 1rem 0;
 }
 
 .navigation ul {
@@ -23,8 +27,7 @@ border-bottom: 1px solid var(--mediumSlateBlue);
   font-size: 1.8rem;
   padding: 0.5rem 1rem;
   color: ${(props) => 
-    props.mode === themeList.light ? 'var(--black)' : 'var(--white)'
-  }
+    props.mode === themeList.light ? 'var(--darkBlue_2)' : 'var(--lightBlue_1)'};
 }
 `
 

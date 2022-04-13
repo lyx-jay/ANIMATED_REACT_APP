@@ -25,7 +25,8 @@ html {
 body {
   background-color: ${(props) => 
     props.mode === themeList.light ? 'var(--lightBlue_1)' : 'var(--darkBlue_3)'
-  }
+  };
+  font-family: 'Poppins', sans-serif;
 }
 
 * {
@@ -48,6 +49,11 @@ a {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
+}
+
+img, svg {
+  width: 100%;
+  height: 100%;
 }
 `
 
