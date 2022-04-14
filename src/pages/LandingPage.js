@@ -5,6 +5,7 @@ import ServiceSection from '../components/ServicesSection/ServiceSection';
 import AboutSection from '../components/AboutSection/AboutSection';
 import TeamSection from '../components/TeamSection/TeamSection';
 import NewsletterSection from '../components/NewletterSection/NewletterSection';
+import ContactSection from '../components/ContactSection/ContactSection';
 export default class LandingPage extends Component {
   render() {
     return (
@@ -15,6 +16,7 @@ export default class LandingPage extends Component {
         <AboutSection />
         <TeamSection />
         <NewsletterSection />
+        <ContactSection />
       </>
     )
   }
