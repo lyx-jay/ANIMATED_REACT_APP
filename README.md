@@ -7,3 +7,4 @@
 5. li中包裹input会导致高度出现变化
 6. checkbox样式修改 appearance
 7. flex: gap
+8. form、input等元素也可以使用text-align居中
