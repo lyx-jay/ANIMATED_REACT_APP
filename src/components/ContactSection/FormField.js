@@ -34,7 +34,6 @@ const FormFieldStyle = styled.div`
 class FormField extends React.Component {
   render() {
     const {label, id, rows = 1, className, ...rest} = this.props;
-    console.log(rest)
     return (
       <FormFieldStyle className={className} mode={this.context.theme}>
         <label htmlFor={id}>

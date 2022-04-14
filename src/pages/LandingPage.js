@@ -6,6 +6,7 @@ import AboutSection from '../components/AboutSection/AboutSection';
 import TeamSection from '../components/TeamSection/TeamSection';
 import NewsletterSection from '../components/NewletterSection/NewletterSection';
 import ContactSection from '../components/ContactSection/ContactSection';
+import Footer from '../components/Footer/Footer';
 export default class LandingPage extends Component {
   render() {
     return (
@@ -17,6 +18,7 @@ export default class LandingPage extends Component {
         <TeamSection />
         <NewsletterSection />
         <ContactSection />
+        <Footer />
       </>
     )
   }
