@@ -23,6 +23,10 @@ border-bottom: 1px solid var(--mediumSlateBlue);
   align-items: center;
 }
 
+.navigation ul li:hover{
+  cursor:pointer;
+  text-decoration: underline;
+}
 .navigation ul .item {
   font-family: "Poppins";
   font-weight: 500;

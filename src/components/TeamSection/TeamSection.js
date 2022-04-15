@@ -10,7 +10,7 @@ import TeamMemberItem from "./TeamMemberItem";
 class TeamSection extends React.Component {
   render() {
     return (
-      <TeamSectionStyle>
+      <TeamSectionStyle id="about">
          <div className="container">
            <div className="team__wrapper">
              <div className="team__info">

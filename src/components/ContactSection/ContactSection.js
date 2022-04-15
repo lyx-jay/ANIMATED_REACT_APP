@@ -9,7 +9,7 @@ import FormField from "./FormField";
 class ContactSection extends React.Component {
   render() {
     return (
-      <ContactSectionStyle>
+      <ContactSectionStyle id="contact">
          <div className="container">
            <div className="contact__wrapper">
               <div className="contact__info">

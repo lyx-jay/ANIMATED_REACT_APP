@@ -11,7 +11,7 @@ class HeroSection extends React.Component {
 
   render() {
     return (
-      <HeroSectionStyles>
+      <HeroSectionStyles id="home">
         <div className="container">
           <div className="hero__wrapper">
             <div className="hero__info">
